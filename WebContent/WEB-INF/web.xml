@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<!-- retrive servlet -->
+	<servlet>
+		<servlet-name>retrieve_servlet</servlet-name>
+		<servlet-class>daoservlets.Retrieve_servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>retrieve_servlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<!-- insert servlet -->
+	<servlet>
+  	<servlet-name>insert_servlet</servlet-name>
+  	<servlet-class>daoservlets.Insert_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insert_servlet</servlet-name>
+  	<url-pattern>/reqinsrecord</url-pattern>
+  </servlet-mapping>
+  <!-- delete servlet -->
+	<servlet>
+  	<servlet-name>delete_servlet</servlet-name>
+  	<servlet-class>daoservlets.Insert_servlet</servlet-class>
+  </servlet>
+	<servlet>
+  	<servlet-name>delete_servlet</servlet-name>
+  	<servlet-class>daoservlet.Delete_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete_servlet</servlet-name>
+  	<url-pattern>/reqdelrecord</url-pattern>
+  </servlet-mapping>
+  <!-- edit servlet -->
+   <servlet>
+  	<servlet-name>edit_servlet</servlet-name>
+  	<servlet-class>daoservlet.Edit_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>edit_servlet</servlet-name>
+  	<url-pattern>/reqeditrecord</url-pattern>
+  </servlet-mapping>
+  <!-- update servlet -->
+   <servlet>
+  	<servlet-name>update_servlet</servlet-name>
+  	<servlet-class>daoservlet.Update_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>update_servlet</servlet-name>
+  	<url-pattern>/requpdaterecord</url-pattern>
+  </servlet-mapping>
+</web-app>
